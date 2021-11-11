@@ -21,10 +21,13 @@
 
         <div class="items">
             <div class="item active">
-                <img src="img/01.jpg" alt="">
+                <img 
+                    :src="slides[activeSlides].image" 
+                    :alt="slides[activeSlides].title"
+                >
                 <div class="text">
-                    <h3>Svezia</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam, cumque provident totam omnis, magnam dolores dolorum corporis.</p>
+                    <h3>{{ slides[activeSlides].title }}</h3>
+                    <p>{{ slides[activeSlides].text }}</p>
                 </div>
             </div>
 
